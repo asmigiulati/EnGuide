@@ -1,0 +1,102 @@
+body{
+    background-color: #1B1C1F;
+}
+
+.container {
+
+    position: absolute;
+    width: 275px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+}
+
+.Go_home_button button{
+    color: #fff;
+    background-color: #d29463;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border: 0px;
+    padding: 2px;
+}
+.small{
+    height: 30px;
+    width: 30px;
+}
+.Go_home_button button:hover{
+    background-color: #016dcb;
+}
+.profile_img{
+    position: absolute;
+    vertical-align: middle;
+    margin-left: 100px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile_text{
+    position: absolute;
+    vertical-align: middle;
+    margin-left: 105px;
+    margin-top: 55px;
+    font-size: 10px;
+}
+
+.profile_text::after {
+    margin-top: 70px;
+}
+.join_button{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    background: #DD5E89;
+    border: 2px solid black;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+    transition: 500ms;
+}
+.join_button:after {
+    content: '';
+    position: absolute;
+    transform: translateX(-55px) translateY(-40px);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: 0px 0px 50px transparent;
+    transition: 500ms;
+}
+
+.join_button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+}
+
+button:hover:after {
+    background: white;
+    box-shadow: 0px 0px 20px #DD5E89, 0px 0px 30px #DD5E89, inset 0px 0px 10px #DD5E89;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin{
+    25%{transform: translateX(-25px) translateY(-35px);
+        width: 15px;
+        height: 15px;}
+    50% {transform: translateX(-55px) translateY(-30px);
+        width: 5px;
+        height: 5px;}
+    75% {transform: translateX(-85px) translateY(-35px);
+        width: 15px;
+        height: 15px;}
+}
+
+button:focus {
+    outline: none;
+}

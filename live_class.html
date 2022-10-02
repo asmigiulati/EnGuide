@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+  <link rel="stylesheet" href="dashboard2.css">
+  <link rel="stylesheet" href="slider.css">
+  <link rel="stylesheet" href="question_box.css">
+  <!-- Boxicons CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<div class="sidebar">
+  <div class="logo-details">
+    <span class="logo_name">Enguide</span>
+  </div>
+  <div class ="Profilee_text">
+    <img src="images/avatar-removebg-preview.png"alt="Profile picture" class="profile_img">
+    <span class="var_name">My Name</span>
+    <span class="profile_text">xp points</span>
+  </div>
+  <ul class="nav-links">
+    <li>
+      <a href="#">
+        <i class='bx bx-list-ul' ></i>
+        <span class="links_name">Dashboard</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="active">
+        <i class='bx bx-laptop'></i>
+        <span class="links_name">Live classes</span>
+      </a>
+    </li>
+    <li class="settings">
+      <a href="#">
+        <i class='bx bx-cog' ></i>
+        <span class="links_name">Settings</span>
+      </a>
+    </li>
+    <li class="logout">
+      <a href="#">
+        <i class='bx bx-log-out'></i>
+        <span class="links_name">Log Out</span>
+      </a>
+    </li>
+  </ul>
+</div>
+<section class="home-section">
+  <nav>
+    <div class="sidebar-button">
+      <i class='bx bx-menu sidebarBtn' style="color: white;"></i>
+      <span class="dashboard" style="color: white;">Live class</span>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Search..." class="searchinput">
+      <i class='bx bx-search' ></i>
+    </div>
+    <div class="profile-details">
+      <img src="images/avatar-removebg-preview.png" alt="">
+      <span class="admin_name">User Name</span>
+      <i class='bx bx-chevron-down' ></i>
+    </div>
+  </nav>
+  <!--main content-->
+  <div id="dot-wrapper">
+    <form class="dot-form" action="">
+      <h1 id="form-title">Understanding</h1>
+      <div id="dot-slider">
+        <input type="radio" name="dot-amount" id="1" value="1">
+        <label for="1" data-dot-amount="Sleeping"></label>
+
+        <input type="radio" name="dot-amount" id="2" value="2">
+        <label for="2" data-dot-amount="Lost"></label>
+
+        <input type="radio" name="dot-amount" id="3" value="3">
+        <label for="3" data-dot-amount="Kinda"></label>
+
+        <input type="radio" name="dot-amount" id="4" value="4">
+        <label for="4" data-dot-amount="Almost there"></label>
+
+        <input type="radio" name="dot-amount" id="5" value="51">
+        <label for="5" data-dot-amount="I'm pro"></label>
+
+        <div id="dot-input-label"></div>
+      </div>
+    </form>
+  </div>
+  <!--next button-->
+  <a href="after_class.html" class="btn btn--Next"><span>Next</span></a>
+</section>
+
+<!--question box-->
+<div class="login-box">
+  <h2>Question Box</h2>
+  <h2>Please log your questions or problems here</h2>
+  <form>
+    <div class="user-box">
+      <input type="text" name="" required="">
+
+      <label>Questions:</label>
+    </div>
+
+    <div class="user-box">
+      <input type="password" name="" required="">
+      <label>Problems:</label>
+    </div>
+    <a class="post_button post" href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      post
+    </a>
+  </form>
+</div>
+
+<!--volunteer button-->
+<div class="volunteer-box login-box">
+  <h2>Would you like to volunteer?</h2>
+  <form>
+<!--    <div class="user-box">-->
+<!--      <input type="text" name="" required="">-->
+
+<!--      <label>Questions:</label>-->
+<!--    </div>-->
+
+<!--    <div class="user-box">-->
+<!--      <input type="password" name="" required="">-->
+<!--      <label>Problems:</label>-->
+<!--    </div>-->
+    <a class="post_button ping" href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      raise hand
+    </a>
+  </form>
+</div>
+
+<!--java script-->
+<script src="Signup.js"></script>
+
+</body>
+</html>

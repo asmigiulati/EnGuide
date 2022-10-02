@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+#dot-wrapper{
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background: #f46b45;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(90deg, #DD5E89 0%, #f7bb97 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:26.5rem;
+    border-radius: 10px;
+}
+.dot-form {
+    width: 90%;
+    max-width: 500px;
+
+}
+form #form-title {
+    margin-top: 0;
+    font-weight: bold;
+    align-items: center;
+
+}
+form #dot-slider {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+form #dot-slider::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: calc(100% * (4 / 5));
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #d0d0d0;
+}
+form #dot-slider input,
+form #dot-slider label {
+    box-sizing: border-box;
+    flex: 1;
+    cursor: pointer;
+}
+form #dot-slider label {
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+form #dot-slider label::before {
+    content: attr(data-dot-amount);
+    position: absolute;
+    left: 50%;
+    padding-top: 10px;
+    transform: translate(-50%, 45px);
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    opacity: 0.55;
+    white-space: nowrap;
+    transition: all 0.15s ease-in-out;
+}
+form #dot-slider label::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border: 2px solid #d0d0d0;
+    background: #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+form #dot-slider label:hover::after {
+    transform: translate(-50%, -50%) scale(1.25);
+}
+form #dot-slider input:checked + label::before {
+    font-weight: 800;
+    opacity: 1;
+}
+form #dot-slider input:checked + label::after {
+    border-width: 4px;
+    transform: translate(-50%, -50%) scale(0.75);
+    border: 2px solid #000;
+}
+#dot-slider input {
+    display: none;
+}
+#dot-slider input:checked ~ #dot-input-label {
+    opacity: 1;
+}
+#dot-slider #dot-input-label {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    background: #000;
+    border-radius: 50%;
+    transition: all 0.15s ease-in-out;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    opacity: 0;
+    z-index: 2;
+}
+#dot-slider input:checked:nth-child(1) ~ #dot-input-label {
+    left: 10%;
+}
+#dot-slider input:checked:nth-child(3) ~ #dot-input-label {
+    left: 30%;
+}
+#dot-slider input:checked:nth-child(5) ~ #dot-input-label {
+    left: 50%;
+}
+#dot-slider input:checked:nth-child(7) ~ #dot-input-label {
+    left: 70%;
+}
+#dot-slider input:checked:nth-child(9) ~ #dot-input-label {
+    left: 90%;
+}
