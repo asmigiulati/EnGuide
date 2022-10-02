@@ -15,6 +15,7 @@ html {
     --typewriterCharacters: 24;
 }
 body{
+    overflow: hidden;
     background-color: #1B1C1F;
     font-family: Orbitron;
 
@@ -329,6 +330,6 @@ section div{
 }
 #about p{
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     color: white;
 }
